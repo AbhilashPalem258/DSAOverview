@@ -14,6 +14,11 @@
 		D50447CD2CB01AD6004D8B5E /* DSAOverviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50447CC2CB01AD6004D8B5E /* DSAOverviewTests.swift */; };
 		D50447D72CB01AD6004D8B5E /* DSAOverviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50447D62CB01AD6004D8B5E /* DSAOverviewUITests.swift */; };
 		D50447D92CB01AD6004D8B5E /* DSAOverviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50447D82CB01AD6004D8B5E /* DSAOverviewUITestsLaunchTests.swift */; };
+		D50447E72CB01B55004D8B5E /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50447E62CB01B55004D8B5E /* Stack.swift */; };
+		D50447EA2CB025D4004D8B5E /* MonotonicStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50447E92CB025D4004D8B5E /* MonotonicStack.swift */; };
+		D50447EE2CB02B7D004D8B5E /* MonotonicStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50447ED2CB02B7D004D8B5E /* MonotonicStackTests.swift */; };
+		D50447F12CB04BFF004D8B5E /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50447F02CB04BFF004D8B5E /* Queue.swift */; };
+		D50447F42CB04E16004D8B5E /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50447F32CB04E16004D8B5E /* BinarySearchTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		D50447D22CB01AD6004D8B5E /* DSAOverviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSAOverviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50447D62CB01AD6004D8B5E /* DSAOverviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSAOverviewUITests.swift; sourceTree = "<group>"; };
 		D50447D82CB01AD6004D8B5E /* DSAOverviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSAOverviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D50447E62CB01B55004D8B5E /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		D50447E92CB025D4004D8B5E /* MonotonicStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonotonicStack.swift; sourceTree = "<group>"; };
+		D50447ED2CB02B7D004D8B5E /* MonotonicStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonotonicStackTests.swift; sourceTree = "<group>"; };
+		D50447F02CB04BFF004D8B5E /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		D50447F32CB04E16004D8B5E /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +104,7 @@
 		D50447BA2CB01AD4004D8B5E /* DSAOverview */ = {
 			isa = PBXGroup;
 			children = (
-				D50447E52CB01AF9004D8B5E /* Stack */,
+				D50447F72CB088A6004D8B5E /* DataStructures */,
 				D50447BB2CB01AD4004D8B5E /* DSAOverviewApp.swift */,
 				D50447BD2CB01AD4004D8B5E /* ContentView.swift */,
 				D50447BF2CB01AD6004D8B5E /* Assets.xcassets */,
@@ -114,6 +124,8 @@
 		D50447CB2CB01AD6004D8B5E /* DSAOverviewTests */ = {
 			isa = PBXGroup;
 			children = (
+				D50447EC2CB02A4A004D8B5E /* MonotonicStack */,
+				D50447EB2CB02A43004D8B5E /* Stack */,
 				D50447CC2CB01AD6004D8B5E /* DSAOverviewTests.swift */,
 			);
 			path = DSAOverviewTests;
@@ -131,8 +143,139 @@
 		D50447E52CB01AF9004D8B5E /* Stack */ = {
 			isa = PBXGroup;
 			children = (
+				D50447E62CB01B55004D8B5E /* Stack.swift */,
 			);
 			path = Stack;
+			sourceTree = "<group>";
+		};
+		D50447E82CB025AF004D8B5E /* MonotonicStack */ = {
+			isa = PBXGroup;
+			children = (
+				D50447E92CB025D4004D8B5E /* MonotonicStack.swift */,
+			);
+			path = MonotonicStack;
+			sourceTree = "<group>";
+		};
+		D50447EB2CB02A43004D8B5E /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		D50447EC2CB02A4A004D8B5E /* MonotonicStack */ = {
+			isa = PBXGroup;
+			children = (
+				D50447ED2CB02B7D004D8B5E /* MonotonicStackTests.swift */,
+			);
+			path = MonotonicStack;
+			sourceTree = "<group>";
+		};
+		D50447EF2CB04BF2004D8B5E /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				D50447F02CB04BFF004D8B5E /* Queue.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		D50447F22CB04E02004D8B5E /* BinarySearchTree */ = {
+			isa = PBXGroup;
+			children = (
+				D50447F32CB04E16004D8B5E /* BinarySearchTree.swift */,
+			);
+			path = BinarySearchTree;
+			sourceTree = "<group>";
+		};
+		D50447F62CB0888A004D8B5E /* Dequeue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dequeue;
+			sourceTree = "<group>";
+		};
+		D50447F72CB088A6004D8B5E /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				D50447FE2CB090C0004D8B5E /* Queues */,
+				D50447FB2CB09065004D8B5E /* Arrays */,
+				D50447F92CB088E4004D8B5E /* Linkedlist */,
+				D50447F82CB088CB004D8B5E /* Heap */,
+				D50447F22CB04E02004D8B5E /* BinarySearchTree */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		D50447F82CB088CB004D8B5E /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Heap;
+			sourceTree = "<group>";
+		};
+		D50447F92CB088E4004D8B5E /* Linkedlist */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Linkedlist;
+			sourceTree = "<group>";
+		};
+		D50447FA2CB08955004D8B5E /* OrderedArray */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OrderedArray;
+			sourceTree = "<group>";
+		};
+		D50447FB2CB09065004D8B5E /* Arrays */ = {
+			isa = PBXGroup;
+			children = (
+				D50447FD2CB0907A004D8B5E /* FixedSizeArray */,
+				D50447FC2CB0906E004D8B5E /* Array2D */,
+				D50447FA2CB08955004D8B5E /* OrderedArray */,
+			);
+			path = Arrays;
+			sourceTree = "<group>";
+		};
+		D50447FC2CB0906E004D8B5E /* Array2D */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Array2D;
+			sourceTree = "<group>";
+		};
+		D50447FD2CB0907A004D8B5E /* FixedSizeArray */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FixedSizeArray;
+			sourceTree = "<group>";
+		};
+		D50447FE2CB090C0004D8B5E /* Queues */ = {
+			isa = PBXGroup;
+			children = (
+				D50447E82CB025AF004D8B5E /* MonotonicStack */,
+				D50448002CB091B7004D8B5E /* RingBuffer */,
+				D50447FF2CB090DC004D8B5E /* PriorityQueue */,
+				D50447F62CB0888A004D8B5E /* Dequeue */,
+				D50447EF2CB04BF2004D8B5E /* Queue */,
+				D50447E52CB01AF9004D8B5E /* Stack */,
+			);
+			path = Queues;
+			sourceTree = "<group>";
+		};
+		D50447FF2CB090DC004D8B5E /* PriorityQueue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PriorityQueue;
+			sourceTree = "<group>";
+		};
+		D50448002CB091B7004D8B5E /* RingBuffer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RingBuffer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +408,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50447F12CB04BFF004D8B5E /* Queue.swift in Sources */,
 				D50447BE2CB01AD4004D8B5E /* ContentView.swift in Sources */,
+				D50447F42CB04E16004D8B5E /* BinarySearchTree.swift in Sources */,
+				D50447E72CB01B55004D8B5E /* Stack.swift in Sources */,
 				D50447BC2CB01AD4004D8B5E /* DSAOverviewApp.swift in Sources */,
+				D50447EA2CB025D4004D8B5E /* MonotonicStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D50447CD2CB01AD6004D8B5E /* DSAOverviewTests.swift in Sources */,
+				D50447EE2CB02B7D004D8B5E /* MonotonicStackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
